@@ -9,6 +9,12 @@
     --c-contacts: #434455;
 } 
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 
 /* Base */
 
