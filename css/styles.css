@@ -102,6 +102,7 @@ nav {
     text-transform: uppercase;
 }
 
+
 .nav-link {
     color: var(--c-text);
     font-weight: 500;
@@ -123,6 +124,8 @@ nav {
 
 .address {
     font-style: normal;
+    padding: 24px 0;
+
 }
 
 .address-ul {
