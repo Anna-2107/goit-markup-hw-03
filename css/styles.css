@@ -45,8 +45,12 @@ ul {
 
 }
 
+img {
+    display: block;
+}
+
 .container {
-    max-width: 1158px;
+    width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -57,6 +61,11 @@ ul {
 
 /* Header */
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
 
 
@@ -66,7 +75,8 @@ ul {
     font-weight: 700;
         line-height: 1.17;
         letter-spacing: 0.03em;
-        text-transform: uppercase
+        text-transform: uppercase;
+        margin-right: 76px;
        
 
 }
@@ -78,7 +88,7 @@ color: var(--c-text);
     font-weight: 700;
         line-height: 1.17;    
         letter-spacing: 0.03em;
-        text-transform: uppercase
+        text-transform: uppercase;
 }
 
 .nav-link {
@@ -87,7 +97,7 @@ color: var(--c-text);
         line-height: 1.5;
         letter-spacing: 0.32px;
         display: inline-block;
-        padding-right: 76px;
+        padding: 24px 0;
 }
 
 .nav-link:hover {
@@ -101,7 +111,12 @@ color: var(--c-text);
 }
 
 .address {
-    font-style: normal
+    font-style: normal;
+}
+
+.address-ul {
+    display: flex;
+    gap: 40px;
 }
 
 .contacts {
@@ -132,18 +147,13 @@ color: var(--c-text);
         border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
 }
 
-/*.nav-container {
-    display: flex;
-   padding: 25.5 0;
-    justify-content: space-around;
-}*/
 
 .nav-list {
         display: flex;
         gap: 40px;
 }
 
-/* Section 1 - Main*/
+/* Section 1 - Hero section*/
 
 .hero-section {
 background-color: #2E2F42;
@@ -176,10 +186,13 @@ color: var(--c-background-light);
     letter-spacing: 0.64px;
     background-color: var(--c-brand);
     cursor: pointer;
-    padding: 16px 32px
-
-
-
+    padding: 16px 32px;
+    display: flex;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    margin: auto;
 }
 
 .button:hover {
@@ -194,7 +207,19 @@ color: var(--c-background-light);
 
 /* Section 2 */
 
+.section-two {
+    padding: 120px 0;
+}
 
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
 
 .opisanie {
 color: var(--c-text);
@@ -202,7 +227,7 @@ color: var(--c-text);
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
-    gap: 8px;
+    margin-bottom: 8px;
 
 }
 
@@ -213,10 +238,7 @@ color: var(--c-text);
         letter-spacing: 0.32px;
 }
 
-.section-two {
-    padding-bottom: 120px;
-        padding-top: 120px;
-}
+
 
 .about-us {
     display: flex;
@@ -228,6 +250,7 @@ color: var(--c-text);
 
 .about-li {
     max-width: 264px;
+    width: calc((100% - 72px) / 4);
 }
 
 
@@ -237,8 +260,7 @@ color: var(--c-text);
 .team {
     background-color: var(--c-background-centre);
     display: flex;
-    padding-bottom: 120px;
-    padding-top: 120px;
+padding: 120px 0;
 }
 
 .team-ul {
@@ -256,27 +278,43 @@ color: var(--c-text);
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    text-align: center
+    text-align: center;
+    margin-bottom: 72px;
 }
 
 .photo {
     background-color: var(--c-background-light);
-
+border-radius: 0px 0px 4px 4px;
 }
 
 .posit {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.sotrudnik {
+    padding: 32px 0;
+}
+
+.op-sotr {
+    color: var(--c-text);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+    text-align: center;
+
 }
 
 /* Section 4 */
 
 .portfolio {
-        padding-bottom: 120px;
-            padding-top: 120px;
-
+padding: 120px 0;
 }
+
 
 .portfolio-ul {
     display: flex;
@@ -284,13 +322,19 @@ color: var(--c-text);
                     padding-bottom: 32px;
                     flex-wrap: wrap;
                     align-content: center;
-                    
+                        column-gap: 24px;
+                        row-gap: 48px;
 }
 
 .portfolio-li {
     border: 1px solid var(--CORNFLOWER, #E7E9FC);
+width: calc((100% - 48px) / 3);
+}
 
-
+.dodatok {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 /*Footer*/
@@ -301,8 +345,7 @@ font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.32px;
 background-color: var(--c-text);
-        padding-bottom: 140px;
-            padding-top: 100px;
+padding: 100px 0;
            
             
 
@@ -310,10 +353,26 @@ background-color: var(--c-text);
 
 .footer-text {
     color: var(--c-background-centre);
-
         line-height: 1.5;
         letter-spacing: 0.32px;
         max-width: 264px;
+}
+
+.logo-foot {
+
+
+    color: var(--c-brand);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 76px;
+    display: inline-block;
+    margin-bottom: 16px;
+
+
 }
 
 .logo-ac-foot {
@@ -323,6 +382,5 @@ background-color: var(--c-text);
         font-weight: 700;
         line-height: 1.17;
         letter-spacing: 0.03em;
-        text-transform: uppercase
-
+        text-transform: uppercase;
     }
