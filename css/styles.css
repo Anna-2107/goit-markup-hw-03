@@ -336,6 +336,8 @@ clip: rect(0 0 0 0);
 .portfolio-li {
     border: 1px solid var(--CORNFLOWER, #E7E9FC);
     width: calc((100% - 48px) / 3);
+}
+
 
 .dodatok {
     padding: 32px 16px;
@@ -346,15 +348,11 @@ clip: rect(0 0 0 0);
 /*Footer*/
 
 .footer {
-
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
     background-color: var(--c-text);
-    padding: 100px 0;
-
-
-
+padding: 100px 0;
 }
 
 .footer-text {
@@ -365,8 +363,6 @@ clip: rect(0 0 0 0);
 }
 
 .logo-foot {
-
-
     color: var(--c-brand);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -377,8 +373,6 @@ clip: rect(0 0 0 0);
     margin-right: 76px;
     display: inline-block;
     margin-bottom: 16px;
-
-
 }
 
 .logo-ac-foot {
