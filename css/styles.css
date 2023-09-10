@@ -9,11 +9,6 @@
     --c-contacts: #434455;
 } 
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
 
 /* Base */
@@ -26,13 +21,34 @@ body {
 
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
 
 ul {
     list-style-type: none;
+        margin: 0;
+            padding: 0;
 
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 
@@ -51,6 +67,7 @@ ul {
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase
+       
 
 }
 
@@ -69,6 +86,8 @@ color: var(--c-text);
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.32px;
+        display: inline-block;
+        padding-right: 76px;
 }
 
 .nav-link:hover {
@@ -103,10 +122,36 @@ color: var(--c-text);
     color: var(--c-hover-active);
 }
 
-/* Section 1 - */
+.header {
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+        justify-content: space-between;
+        align-content: center;
+        border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+}
+
+/*.nav-container {
+    display: flex;
+   padding: 25.5 0;
+    justify-content: space-around;
+}*/
+
+.nav-list {
+        display: flex;
+        gap: 40px;
+}
+
+/* Section 1 - Main*/
 
 .hero-section {
 background-color: #2E2F42;
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+                padding-bottom: 188px;
+                    padding-top: 188px;
 }
 
 .zagolovok {
@@ -115,6 +160,11 @@ color: var(--c-background-light);
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    max-width: 496px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+
+
 }
 
 .button {
@@ -126,6 +176,10 @@ color: var(--c-background-light);
     letter-spacing: 0.64px;
     background-color: var(--c-brand);
     cursor: pointer;
+    padding: 16px 32px
+
+
+
 }
 
 .button:hover {
@@ -148,6 +202,8 @@ color: var(--c-text);
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    gap: 8px;
+
 }
 
 .text {
@@ -157,11 +213,41 @@ color: var(--c-text);
         letter-spacing: 0.32px;
 }
 
+.section-two {
+    padding-bottom: 120px;
+        padding-top: 120px;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+}
+
+.about-li {
+    max-width: 264px;
+}
+
+
+
 /* Section 3 */
 
 .team {
     background-color: var(--c-background-centre);
+    display: flex;
+    padding-bottom: 120px;
+    padding-top: 120px;
 }
+
+.team-ul {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+}
+
 
 .drugoizagolovok {
 color: var(--c-text);
@@ -174,7 +260,8 @@ color: var(--c-text);
 }
 
 .photo {
-    background-color: var(--c-background-light)
+    background-color: var(--c-background-light);
+
 }
 
 .posit {
@@ -185,6 +272,27 @@ color: var(--c-text);
 
 /* Section 4 */
 
+.portfolio {
+        padding-bottom: 120px;
+            padding-top: 120px;
+
+}
+
+.portfolio-ul {
+    display: flex;
+                    justify-content: center;
+                    padding-bottom: 32px;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    
+}
+
+.portfolio-li {
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+
+
+}
+
 /*Footer*/
 
 .footer {
@@ -193,6 +301,11 @@ font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.32px;
 background-color: var(--c-text);
+        padding-bottom: 140px;
+            padding-top: 100px;
+           
+            
+
 }
 
 .footer-text {
@@ -200,6 +313,7 @@ background-color: var(--c-text);
 
         line-height: 1.5;
         letter-spacing: 0.32px;
+        max-width: 264px;
 }
 
 .logo-ac-foot {
@@ -210,4 +324,5 @@ background-color: var(--c-text);
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase
+
     }
