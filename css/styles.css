@@ -347,6 +347,7 @@ clip: rect(0 0 0 0);
 
 .portfolio-li {
 border: 1px solid var(--CORNFLOWER, #E7E9FC);
+width: calc((100% - 48px) / 3);
 
 }
 
