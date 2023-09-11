@@ -52,7 +52,7 @@ img {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-        display: flex;
+        
 }
 
 
@@ -69,6 +69,12 @@ img {
     justify-content: space-between;
     align-content: center;
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+}
+
+.container header-inner {
+    display: flex;
+        align-items: center;
+
 }
 
 nav {
@@ -125,6 +131,7 @@ nav {
 .address {
     font-style: normal;
     padding: 24px 0;
+
 
 }
 
@@ -350,7 +357,7 @@ clip: rect(0 0 0 0);
 
 /*Footer*/
 
-.footer {
+.footer-section {
     background-color: var(--c-text);
 padding: 100px 0;
 }
