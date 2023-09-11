@@ -61,7 +61,7 @@ img {
 
 /* Header */
 
-.container-header-inner {
+.container header {
     display: flex;
     align-items: center;
     justify-content: space-between;
