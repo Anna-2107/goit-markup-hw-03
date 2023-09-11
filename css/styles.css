@@ -346,10 +346,14 @@ clip: rect(0 0 0 0);
        
 }
 
+
 .portfolio-li {
 width: calc((100% - 72px) / 3);
 border: 1px solid var(--CORNFLOWER, #E7E9FC);
+}
 
+.portfolio-li li:first-child {
+width: calc((100% - 48px) / 3);
 }
 
 
