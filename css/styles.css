@@ -131,9 +131,8 @@ nav {
 .address {
     font-style: normal;
     padding: 24px 0;
-
-
 }
+
 
 .address-ul {
     display: flex;
@@ -344,7 +343,6 @@ clip: rect(0 0 0 0);
 }
 
 .portfolio-li {
-    border: 1px solid var(--CORNFLOWER, #E7E9FC);
     width: calc((100% - 3 * 24px) / 3);
 }
 
